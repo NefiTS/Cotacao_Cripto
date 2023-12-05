@@ -65,8 +65,8 @@ def main():
     bot.wait(4000)
     
     # Define os dados do e-mail
-    from_email = "nefitrindade@gmail.com"
-    to_email = "nefitrindade@gmail.com"
+    from_email = "email aqui"
+    to_email = "email aqui"
     subject = "Cotação da Solana"
     body = "O valor atual da Solana é R$" + cotacao_Sol
 
@@ -76,7 +76,7 @@ def main():
     smtp.connect("smtp.gmail.com", 465)
     
     # Faz login no servidor de e-mail
-    smtp.login(from_email, "")
+    smtp.login(from_email, "")# chave do e-mail entre aspas
 
     # Envia o e-mail
     msg = f"Subject: {subject}\n\n{body}"
